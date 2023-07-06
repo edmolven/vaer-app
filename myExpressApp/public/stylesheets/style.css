@@ -1,8 +1,29 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 a {
   color: #00B7FF;
+}
+
+.btn {
+  background-color: rgb(42, 186, 253); /* Green */
+  border: 3px solid transparent;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.btn:hover{
+  border: 3px solid lightblue;
 }

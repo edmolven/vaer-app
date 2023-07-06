@@ -38,4 +38,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.get('/foo', (req, res) => {
+  res.send('Hello from Node.js server');
+  console.log("hello");
+});
+
 module.exports = app;

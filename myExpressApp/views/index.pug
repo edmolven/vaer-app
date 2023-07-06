@@ -3,3 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+ 
+  
+  //form(method="get" action="/foo" )
+  a.btn(href='/foo') Fetch weather
+  p Temperature at Blindern:
+  p(id='temp') #{currTemp}
+  //script(type='text/javascript',src='/javascripts/frostGet.js')
+  //script(type='text/javascript').
+    function fetchWeatherClick() {
+      router.post('/fetchWeather');  //post('/fetchWeather')
+    }
